@@ -2,6 +2,10 @@
 
 A responsive, accessible multi-page web application built with semantic HTML,CSS, and Vanilla Javascript.
 
+## 🚀 Live Demo
+
+[View Live Demo](https://hng-fe-stage1.vercel.app/) - https://hng-fe-stage1.vercel.app/
+
 ## 📒 Project Overview
 This project was completed in two stages:
 
