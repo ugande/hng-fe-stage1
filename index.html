@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAGE-ONE PROJECT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav" data-testid="test-main-navigation">
+        <div class="nav-container">
+            <a href="#" class="logo">STAGE-ONE PROJECT</a>
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active" data-page="profile">Profile</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About Me</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page container -->
+    <div class="page-container">
+        <!-- Profile page -->
+        <section id="profile-page" class="page active">
+            <article class="profile-card" data-testid="test-profile-card">
+                <header class="profile-header">
+                    <figure class="profile-avatar">
+                        <img src="IMG_20190610_134310.jpg" alt="profile photo" data-testid="test-user-avatar">
+                    </figure>
+                    <div>
+                        <h2 class="profile-name" data-testid="test-user-name">
+                            Daniel Michael
+                            <span>Frontend developer</span>
+                        </h2>
+                        <div class="profile-time" data-testid="test-user-time">Loading time...</div>
+                    </div>
+                </header>
+                <section class="profile-content">
+                    <div class="top-row">
+                        <section class="profile-section">
+                            <h3>About Me</h3>
+                            <p class="profile-bio" data-testid="test-user-bio">I am a Frontend developer with a passion
+                                for
+                                creating beautiful, accessible web experiences. I specialize in React, HTML, CSS,
+                                Javascript,
+                                PHP and MySQL. When I'm not coding, you can find me reading, listening to gospel songs,
+                                taking a
+                                long walk.</p>
+                        </section>
+                        <section class="profile-section">
+                            <h3>Social Links</h3>
+                            <nav class="profile-links" data-testid="test-user-social-links">
+                                <a href="https://twitter.com/lordugande" class="social-link" target="_blank"
+                                    rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+                                <a href="https://github.com/ugande" class="social-link" target="_blank"
+                                    rel="noopener noreferrer" data-testid="test-user-social-github">Github</a>
+                                <a href="https://instagram.com/danielugande" class="social-link" target="_blank"
+                                    rel="noopener noreferrer" data-testid="test-user-social-instagram">Instagram</a>
+                            </nav>
+                        </section>
+                    </div>
+                    <div class="bottom-row">
+                        <section class="profile-section">
+                            <h3>Hobbies</h3>
+                            <ul class="hobby-list" data-testid="test-user-hobbies">
+                                <li class="hobby-item">Reading horror novels</li>
+                                <li class="hobby-item">Singing</li>
+                                <li class="hobby-item">Traveling</li>
+                                <li class="hobby-item">Taking long walks</li>
+                                <li class="hobby-item">Board Games</li>
+                            </ul>
+                        </section>
+                        <section class="profile-section">
+                            <h3>Dislikes</h3>
+                            <ul class="dislike-list" data-testid="test-user-dislikes">
+                                <li class="dislike-item">Broken CSS</li>
+                                <li class="dislike-item">Slow websites</li>
+                                <li class="dislike-item">Inaccessible UI</li>
+                                <li class="dislike-item">Overly complex code</li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+            </article>
+        </section>
+
+        <!-- About me page -->
+        <section id="about-page" class="page" data-testid="test-about-page">
+            <main>
+                <h1 class="page-title">About Me</h1>
+                <p class="page-subtitle">My journey, goals, and reflections</p>
+                <section class="about-section">
+                    <h2>My Bio</h2>
+                    <div class="about-content" data-testid="test-about-bio">
+                        <p>I am a passionate frontend developer with over 3+ years of experience
+                            building web
+                            applications. My journey started with basic HTML and CSS, and I've
+                            since expanded my skills
+                            to include modern Javascript frameworks, responsive design, and
+                            accessibility best
+                            practices.</p>
+                        <p>I believe in creating web experiences that are not only visually
+                            appealing but also inclusive
+                            and performant. I'm constantly learning and staying up-to-date with
+                            the latest web
+                            technologies and best practices.</p>
+                    </div>
+                </section>
+                <section class="about-section">
+                    <h2>Goals in This Program</h2>
+                    <div class="about-content" data-testid="test-about-goals">
+                        <p>During this internship I want to work toward three concrete outcomes I can point to after
+                            the program:</p>
+                        <ul class="about-list">
+                            <li>Ship a small, accessible UI component library (3–5 components) with documented
+                                usage and keyboard/ARIA support.</li>
+                            <li>Improve page load performance by learning and applying code-splitting and image
+                                optimization techniques — aim to reduce a demo page's First Contentful Paint by 30%.
+                            </li>
+                            <li>Write at least five focused unit/integration tests for a feature I build, and integrate
+                                them into a simple CI check.</li>
+                        </ul>
+                        <p>These goals are intentionally measurable: they help me learn tooling, accessibility,
+                            and quality practices that make real projects more maintainable.</p>
+                    </div>
+                </section>
+                <section class="about-section">
+                    <h2>Areas of Low Confidence</h2>
+                    <div class="about-content" data-testid="test-about-confidence">
+                        <p>There are a few practical skills I want to build with focused practice and mentoring:</p>
+                        <ul class="about-list">
+                            <li><strong>CSS systems & architecture:</strong> I know layout and components, but I want to
+                                learn patterns for scale — design tokens, utility layers, and component APIs that keep
+                                styles predictable in large apps.</li>
+                            <li><strong>Performance diagnostics:</strong> I'm comfortable improving images and bundles,
+                                but I need more experience using tooling (Lighthouse/DevTools/Perf profiles) to find
+                                the real hotspots and prioritize fixes.</li>
+                            <li><strong>Test-driven development:</strong> I can write tests, but struggle to design
+                                tests
+                                that focus on behavior rather than implementation — I want to practice writing stable,
+                                maintainable tests.</li>
+                            <li><strong>Deployment pipelines:</strong> I've not yet set up CI/CD for a project from
+                                scratch;
+                                learning a minimal pipeline (GitHub Actions) for linting, tests, and static hosting is a
+                                priority.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="about-section">
+                    <h2>Note to Future Self</h2>
+                    <div class="about-content" data-testid="test-about-future-note">
+                        <p>When you read this in six months, check whether you shipped the component library and the
+                            tests you planned. If not, ask: what roadblock stopped you and what can you do this week to
+                            unblock it?</p>
+                        <p>Celebrate small wins — a PR merged, a failing test fixed, or a page that loads noticeably
+                            faster. Those are the signals that you're improving. Keep a short weekly log (3 bullets)
+                            describing what you learned and one thing you'll do differently next week.</p>
+                        <p>Finally, be kind to yourself. Growth is a series of tiny improvements. Focus on clarity,
+                            consistency, and sustainable momentum rather than perfection.</p>
+                    </div>
+                </section>
+                <section class="about-section">
+                    <h2>Extra Thoughts</h2>
+                    <div class="about-content" data-testid="test-about-extra">
+                        <p>Frontend development is more than just writing code - it's about creating experiences. Every
+                            decision we make, from the colors we choose to the way we structure our components, impacts
+                            how users interact with our applications.</p>
+                        <p>I'm excited to be part of a community that values not just technical excellence but also
+                            collaboration, mentorship, and continuous improvement. The web is an incredible platform
+                            that continues to evolve, and i'm grateful to be part of shaping its future.</p>
+                    </div>
+                </section>
+            </main>
+        </section>
+
+        <!-- Contact us page -->
+        <section id="contact-page" class="page">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with us. We'd love to hear from you.</p>
+            <form action="#" class="contact-form" id="contact-form" novalidate>
+                <div class="success-message" data-testid="test-contact-success">
+                    <p>Thank you for your message. We'll get back to you soon.</p>
+                </div>
+                <div class="form-group">
+                    <label for="full-name" class="form-label">Full Name</label>
+                    <input type="text" id="full-name" class="form-control" data-testid="test-contact-name" required
+                        aria-describedby="name-error">
+                    <div class="error-message" id="name-error" data-testid="test-contact-error-name">Please enter your
+                        full name</div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" data-testid="test-contact-email" required
+                        aria-describedby="email-error">
+                    <div class="error-message" id="email-error" data-testid="test-contact-error-email">Please enter a
+                        valid email address</div>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" id="subject" class="form-control" data-testid="test-contact-subject" required
+                        aria-describedby="subject-error">
+                    <div class="error-message" id="subject-error" data-testid="test-contact-error-subject">Please enter
+                        a subject</div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" id="message" class="form-control" data-testid="test-contact-message"
+                        required aria-describedby="message-error"></textarea>
+                    <div class="error-message" id="message-error" data-testid="test-contact-error-message">Message must
+                        be atleast 10 characters long</div>
+                </div>
+                <button type="submit" class="submit-btn" data-testid="test-contact-submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
